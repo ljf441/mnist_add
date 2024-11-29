@@ -7,3 +7,10 @@ testing.ipynb
 svm_model.pkl
 *.pickle
 *.db
+*.run
+*.deb
+*.tgz
+*.pkl
+cuda/*
+save/*
+logs/*
