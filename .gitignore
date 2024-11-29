@@ -14,3 +14,4 @@ svm_model.pkl
 cuda/*
 save/*
 logs/*
+wget-log
