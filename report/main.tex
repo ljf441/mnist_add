@@ -43,16 +43,18 @@ MNIST is a dataset consisting of handwritten digits and their labels commonly us
 
 For this project, the problem at hand is not just for the inference pipeline to learn to recognise MNIST digits accurately, it must also learn addition.
 
-Previous work has been done on this by Hoshen and Peleg in 2015 \citep{hoshen2015visuallearningarithmeticoperations} and Bloice et al. in 2019 \citep{bloice2019performingarithmeticusingneural}. Hoshen and Peleg focused on end-to-end visual learning of arithmetic operations using pictures, first learning on recognising the image, then learning the arithmetic operation \citep{hoshen2015visuallearningarithmeticoperations}. Bloice et al. were more concerned with .
+% Previous work has been done on this by Hoshen and Peleg in 2015 \citep{hoshen2015visuallearningarithmeticoperations} and Bloice et al. in 2019 \citep{bloice2019performingarithmeticusingneural}. Hoshen and Peleg focused on end-to-end visual learning of arithmetic operations using pictures, first learning on recognising the image, then learning the arithmetic operation \citep{hoshen2015visuallearningarithmeticoperations}. Bloice et al. were more concerned with .
 
-% This is a problem first tackled by Bloice et al. in 2019, where a convolutional neural network was trained in addition using images of MNIST digit pairs \citep{bloice2019performingarithmeticusingneural}. 
+The way in which the inference pipeline will do this is simple: first, a stratified dataset of paired MNIST digits will be generated, along with the label denoting their sum. Then, a neural network will be trained and perform supervised learning on this dataset. In order to get an accurately-performing neural network, hyper-parameter tuning will also be performed using \texttt{Optuna}.
 
-The way in which the inference pipeline will do this is simple: first, a stratified dataset of paired MNIST digits will be generated, along with the label denoting their sum. The object of this dataset is to get an even distribution of digit pair permutations, such that the resulting model will not be biased to learning on the extremes. Then, a neural network will be trained and perform supervised learning on this dataset. In order to get an accurately-performing neural network, hyper-parameter tuning will also be performed using \texttt{Optuna}.
+To explore this problem further, a SVM, Random Forest classifier, and an AdaBoost classifier were also trained on the MNIST dataset. Weak linear classifiers were also used.
 
-To explore this problem further, 
+The t-SNE distribution of the dataset and the embedding layer of the best-performing neural network were also extracted and analysed, optimising for perplexity.
 % docker run --gpus all -it -p 8888:8888 mnist_add-img
 
 \section{Dataset generation}
+
+
 
 \section{Neural network pipeline}
 
