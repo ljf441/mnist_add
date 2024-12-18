@@ -56,14 +56,11 @@ MNIST is a dataset consisting of handwritten digits and their labels commonly us
 
 For this project, the problem at hand is not just for the inference pipeline to learn to recognise MNIST digits accurately, it must also learn addition.
 
-% Previous work has been done on this by Hoshen and Peleg in 2015 \citep{hoshen2015visuallearningarithmeticoperations} and Bloice et al. in 2019 \citep{bloice2019performingarithmeticusingneural}. Hoshen and Peleg focused on end-to-end visual learning of arithmetic operations using pictures, first learning on recognising the image, then learning the arithmetic operation \citep{hoshen2015visuallearningarithmeticoperations}. Bloice et al. were more concerned with .
-
-The way in which the inference pipeline will do this is simple: first, a stratified dataset of paired MNIST digits will be generated, along with the label denoting their sum. Then, a neural network will be trained and perform supervised learning on this dataset. In order to get an accurately-performing neural network, hyper-parameter tuning will also be performed using \texttt{Optuna}.
+First, a stratified dataset of paired MNIST digits will be generated, along with the label denoting their sum. Then, a neural network will be trained and perform supervised learning on this dataset. Hyperparameter tuning will be performed using \texttt{Optuna}.
 
 To explore this problem further, a SVM, a random forest, and an AdaBoost classifier were also trained on the MNIST dataset. Weak linear classifiers were also used.
 
 The t-SNE distribution of the dataset and the embedding layer of the best-performing neural network were also extracted and analysed, optimising for perplexity.
-% docker run --gpus all -it -p 8888:8888 mnist_add-img
 
 \section{Dataset generation}
 The dataset upon which the models were trained on was first loaded in from MNIST using \texttt{Tensorflow}. For datasets greater than and divisible by 100, stratified data sampling was used, such that each permutation of digit pairs was represented equally. For datasets less than 100 samples in size, each pair was randomly picked from a list of all possible permutations without replacement.
@@ -95,7 +92,7 @@ In order to train feed forward neural networks, a loss function is required. For
     \mathcal{L}(\theta, \hat{\theta}) = - \frac{1}{N}\sum^N_{i=1}\sum^C_{j=1} \theta_{ij} \log{\hat{\theta_{ij}}},
     \label{eq:loss}
 \end{equation}
-where $\theta_{ij}$ is the true value of the $i$th element belonging to the $j$th class and $\hat{\theta_{ij}}$ is the predicted value of that same element. This function is used to calculate the loss during training with the backpropagation algorithm, which computes the gradients of the loss with respect to each weight by applying the chain rule. This allows the neural network to learn how to adjust its weights by optimising this function. The weights are adjusted using the Adam optimisation function in the following process:
+where $\theta_{ij}$ is the true value of the $i$th element belonging to the $j$th class and $\hat{\theta_{ij}}$ is the predicted value of that element. This function is used to calculate the loss during training with the backpropagation algorithm, which computes the gradients of the loss with respect to each weight by applying the chain rule. This allows the neural network to learn how to adjust its weights by optimising this function. The weights are adjusted using the Adam optimisation function in the following process:
 
 \begin{enumerate}
     \item The model parameters $\theta$; learning rate $\alpha$; and Adam hyperparameters $\beta_1$, $\beta_2$, and $\epsilon$ are initialised.
@@ -129,15 +126,16 @@ where $\theta_{ij}$ is the true value of the $i$th element belonging to the $j$t
 \subsection{Hyperparameter Tuning}
 For this project, 5 hyperparameters were tuned: the initial learning rate for the Adam optimiser, the dropout rate of the dropout layers, the L2 regularisation penalty, the number of layers, and the batch size carried over from each layer. In addition to this, batch normalisation was also used.
 
-The Adam optimisation algorithm is a stochastic gradient descent method that is based on adaptive estimation of first-order and second-order moments \citep{kingma2017adammethodstochasticoptimization}. It was preferred for this project as it is computationally efficient and well-suited to large-scale problems, as advised by Kingma and Ba \citep{kingma2017adammethodstochasticoptimization}. The inital learning rate $\alpha^{(0)}$ was tuned for the optimal rate of adaptative estimation, as too-large of a learning rate can lead to missing the minimum entirely while too-small of a learning rate leads to computationally-inefficient code.
+The Adam optimisation algorithm is a stochastic gradient descent method that is based on adaptive estimation of first-order and second-order moments \citep{kingma2017adammethodstochasticoptimization}. It was used as it is computationally efficient and well-suited to large-scale problems, as advised by Kingma and Ba \citep{kingma2017adammethodstochasticoptimization}. The inital learning rate $\alpha^{(0)}$ was tuned for the optimal rate of adaptative estimation. Too-large of a learning rate can lead to missing the minimum entirely, while too-small of a learning rate leads to computationally-inefficient code.
 
-The dropout rate of the dropout layers was tuned so that the resulting neural network would not over-fit to the training data but also not entirely forget what it was meant to be fitting over the course of training \citep{Mehta_2019}. In \texttt{Tensorflow}, the \texttt{Dropout} layer randomly resets neurons to zero with a certain frequency. The rest of the neurons are scaled up such that the total sum over all inputs remain unchanged.
+The dropout rate of the dropout layers was tuned so that the resulting neural network would not over-fit to the training data but also not forget what it was meant to be fitting during training \citep{Mehta_2019}. In \texttt{Tensorflow}, the \texttt{Dropout} layer randomly resets neurons to zero with a certain frequency. The rest of the neurons are scaled up such that the total sum over all inputs remain unchanged.
 
 Regularisation is when a penalty is added to the loss function $\mathcal{L}$ in order to prevent overfitting \citep{Mehta_2019}. L2 regularisation, or ridge regression, adds the squared sum of the coefficients as the penalty term. Adding L2 regularisation to Eq.~\ref{eq:loss} results in the following equation:
 \begin{equation}
     \mathcal{L}(\theta, \hat{\theta}, \alpha_{L2}, \mathrm{w}) = - \frac{1}{N}\sum^N_{i=1}\sum^C_{j=1} \theta_{ij} \log{\hat{\theta_{ij}}} + \alpha_{L2} ||\mathrm{w}||^2_2,
 \end{equation}
 where $\theta_{ij}$ and $\hat{\theta}_{ij}$ mean the same things, $\alpha_{L2}$ refers to the penalty parameter, and $||\mathrm{w}||^2_2$ is the L2 norm squared of the weight vector of the parameters.
+
 L2 regularisation was preferred over L1 regularisation as its derivative is smooth and continuous and thus less computationally expensive.
 
 The number of layers were tuned so that the neural network would neither overfit nor underfit. The range of the number of layers to tune was restricted so that neither too many layers were attempted, which would have required a lot of computational resources, nor too few, which would have failed to properly capture all relevant features of the dataset.
@@ -153,7 +151,7 @@ where $N_k$ is the number of neurons in layer $k$.
 
 Batch normalisation is a regularisation scheme that causes the inputs to be centered about zero with respect to the bias \citep{Mehta_2019}. This prevents neuron saturation and gradients vanishing, improving the learning speed. This was implemented by adding \texttt{BatchNormalization} layers which standardised the inputs by the mean and variance of the mini-batch.
 
-The results of the \texttt{Optuna} hyperparameter tuning is shown in Table~\ref{tab:nn_hyperparameter}, which contains the optimal hyperparameters. As the final architecture contains 6 \texttt{Dense} layers, the number of neurons in each layer range from 2048 to 64, descending, as seen in Table~\ref{tab:neurons}. The architecture of  best-performing neural network is shown in Table~\ref{tab:nn_arch}.
+The results of the \texttt{Optuna} hyperparameter tuning is shown in Table~\ref{tab:nn_hyperparameter}, which contains the optimal hyperparameters. As the final architecture contains 6 hidden \texttt{Dense} layers, the number of neurons in each layer range from 2048 to 64, descending, as seen in Table~\ref{tab:neurons}. The architecture of the best-performing neural network is shown in Table~\ref{tab:nn_arch}.
 
 \begin{table}[ht]
     \centering
@@ -230,7 +228,7 @@ The resulting confusion matrix is shown in Fig.~\ref{fig:nn_confusion}. The rows
     \caption{Confusion matrix of the best-performing neural network. }\label{fig:nn_confusion}
 \end{figure}
 
-An example of the neural network in action can be seen in Fig.~\ref{fig:nn_predict}. As can be seen, the neural network's predictions are quite accurate, except for the first image, where the number '8' is quite deformed. It is likely that the neural network mistook it as a '7' instead, and then proceeded to correctly perform addition (7+1=8).
+An example of the neural network in action can be seen in Fig.~\ref{fig:nn_predict}. The neural network's predictions are quite accurate, except for the first image, where the number '8' is quite deformed. It is likely that the neural network mistook it as a '7' instead, and then proceeded to correctly perform addition: $7+1=8$.
 
 \begin{figure}[ht]
     \centering
@@ -246,7 +244,7 @@ SVM stands for Support Vector Machine, which is a supervised learning method use
 
 The SVM classifier was implemented using \texttt{scikit-learn}'s \texttt{sklearn.svm.SVC} class. \texttt{Optuna} was used to tune the $\gamma$, $c$, and polynomial degree hyperparameters. The polynomial kernel trick produced the best-performing SVM classifier during initial tuning, thus that kernel trick was the one used for further tuning.
 
-During training, it was found that the best-performing SVM was one with a large number of training samples. However, SVMs have an order complexity ranging from around $\mathcal{O}(N^2)$ and $\mathcal{O}(N^3)$ and it is for this reason \texttt{Optuna} hyperparameter tuning was limited to 10,000 samples and training was limited to 64,000 samples.
+During training, it was found that the best-performing SVM was one with a large number of training samples. However, SVMs have an order complexity around $\mathcal{O}(N^2)$ \citep{Chang2007} and it is for this reason \texttt{Optuna} hyperparameter tuning was limited to 10,000 samples and training was limited to 64,000 samples.
 
 The hyperparameters of the best-performing SVM can be found in Table~\ref{tab:svm_hyperparameter}. This was evaluated using \texttt{scikit-learn}'s \texttt{sklearn.metrics.accuracy\_score} and \texttt{classification \_report} methods, resulting in Table~\ref{tab:svm_eval}. Precision refers to the positive predictive value and is the fraction of predicted positive results that are true. Recall refers to the fraction of true positive results that are predicted to be true. The F-score is calculated from the precision and recall, as seen in Eq.~\ref{eq:fscore} and ranges from 0 to 1. The higher the F-score, the better. The resulting confusion matrix can be seen in Fig.~\ref{fig:svm_confusion}.
 
@@ -311,7 +309,7 @@ The hyperparameters of the best-performing SVM can be found in Table~\ref{tab:sv
 \subsection{Random forest}
 Random forest classifiers are a type of ensemble classifier, where multiple decision trees are used in aggregate in order to calculate predicted labels. Hyperparameter tuning and training for the best-performing random forest was much quicker than for SVMs and offered similar accuracies. This is because the time complexity for training random forest is on the order $\mathcal{O}(N M D \log({N}) )$, where $N$ is the number of samples, $M$ the number of classes, and $D$ the number of decision trees \citep{Zheng2021}.
 
-Hyperparameter tuning was performed on the maximum depth, the number of allowed decision trees, the criterion to measure the quality of a split, and the method to calculate the maximum number of features to consider when looking for the best split. The optimal hyperparameters can be found in Table~\ref{tab:rf_hyperparameter}.
+Hyperparameter tuning used for their maximum depth, the number of allowed decision trees, the criterion to measure the quality of a split, and the method to calculate the maximum number of features to consider when looking for the best split. The optimal hyperparameters can be found in Table~\ref{tab:rf_hyperparameter}.
 
 \begin{table}[ht]
     \centering
@@ -437,7 +435,7 @@ The optimal hyperparameters can be found in Table~\ref{tab:ab_hyperparameter}. T
 \section{Weak linear classifiers}
 To explore this dataset further, the results of a single linear regression classifier trained on the whole image of the digit pair was compared to that of a linear regression classifier that was fitted to each digit of the pair sequentially. That is to say, the first classifier was trained on digit pairs, while the second was on trained on single digits.
 
-An example of the resulting classifier probabilities is shown in Fig.~\ref{fig:class_prob}. The result is that the single classifier naturally has probabilities for label classes ranging from 0-18, whilst the sequential classifier's probability must be manually calculated, as it natively has probabilities for label classes ranging from 0-9. This calculation is trivial, as the digits of each pair are independent of each other and thus their probabilities can be directly multiplied.
+An example of the resulting classifier probabilities is shown in Figures \ref{fig:class_prob} and \ref{fig:class_prob_bar}. The result is that the single classifier naturally has probabilities for label classes ranging from 0-18, whilst the sequential classifier's probability must be manually calculated, as it natively has probabilities for label classes ranging from 0-9. This calculation is trivial, as the digits of each pair are independent of each other and thus their probabilities can be directly multiplied.
 
 The accuracy is also compared in Fig.~\ref{fig:class_compare}. As expected, the sequential classifier is more accurate by the single classifier as it is simply trained on single digit recognition and the labels are combined after the fact to produce the final labels. In comparison, the single linear regression classifier has the much harder task of both recognising the digit pair and performing addition.
 
@@ -446,7 +444,13 @@ For both classifiers, the most significant jump in accuracy is when the number o
 \begin{figure}[htb]
     \centering
     \includegraphics[width=\columnwidth, keepaspectratio]{../classifier_heatmap.png}
-    \caption{Heatmaps of classifier probabilites for a single classifier (left) and a sequentially applied classifier (right).}\label{fig:class_prob}
+    \caption{Heatmaps of classifier probabilites for a single classifier (top) and a sequentially applied classifier (bottom). Shown are the first five class probabilities for linear regression classifiers trained on 10,000 samples.}\label{fig:class_prob}
+\end{figure}
+
+\begin{figure}[htb]
+    \centering
+    \includegraphics[width=\columnwidth, keepaspectratio]{../classifer_barplot.png}
+    \caption{Barplot of classifier probabilites for a single classifier (left) and a sequentially applied classifier (right). Shown specifically are the probability distributions of sample 3 from Fig.~\ref{fig:class_prob}.}\label{fig:class_prob_bar}
 \end{figure}
 
 \begin{figure}[htb]
@@ -462,8 +466,8 @@ For both classifiers, the most significant jump in accuracy is when the number o
         \cline{2-6}
         Accuracy& 50 & 100 & 500 & 1000 & 10000\\
         \hline
-        Single classifier (2 s.f.)& 0.36 & 0.6 & 0.73 &0.76 &0.82\\
-        Sequential classifier (2 s.f.)& 0.1 & 0.1 &0.14 &0.15& 0.18\\
+        Single classifier (2 s.f.)& 0.08 & 0.10 & 0.11 &0.14 &0.18\\
+        Sequential classifier (2 s.f.)& 0.36 & 0.71 &0.73 &0.75& 0.82\\
     \end{tabular}
     \caption{Accuracies of the single and sequential linear regression classifiers as sample sizes increase.}\label{tab:lin_metric}
 \end{table}
@@ -473,7 +477,7 @@ The t-SNE distributions of the raw input data and the embedding layer of the bes
 
 Perplexity is a hyperparameter for t-SNE and it relates to the number of nearest neighbours allowed. The higher the perplexity, the greater the variance. Perplexity was first optimised by eye in Fig.~\ref{fig:tsne} and then by silhouette score, which is a metric used to measure the quality of clustering results. The best-performing t-SNE according to silhouette score is shown in Fig.~\ref{fig:best_tsne}.
 
-Comparing the t-SNE representation of the input data to the embedding layer, it is clear to see that the data from the embedding layer is much easier to separate into the requisite classes than the data from the input layer. Even with high perplexity, the t-SNE distribution representation of the input layer appears mostly random with little structure. This is expected as with the input data, there is high dimensionality and related data points may not be grouped together. This is highly likely, as the dataset was generated randomly. In contrast, the embedding layer of the neural network has similar inputs already mapped closer together and is more structured. Essentially, the neural network has already done the work of grouping similar data points together.
+In comparison to the t-SNE representation of the input data to the embedding layer, the data from the embedding layer is much easier to separate into the requisite classes than the data from the input layer. Even with high perplexity, the t-SNE distribution representation of the input layer appears mostly random with little structure. This is expected as there is high dimensionality in the input data and related data points may not be grouped together. This is highly likely, as the dataset was generated randomly. In contrast, the embedding layer of the neural network has similar inputs already mapped closer together and is more structured. Essentially, the neural network has already done the work of grouping similar data points together.
 
 \begin{figure}[htb]
     \centering
@@ -486,7 +490,7 @@ Comparing the t-SNE representation of the input data to the embedding layer, it 
     \includegraphics[width=\columnwidth, keepaspectratio]{../best_tsne.png}
     \caption{Best t-SNE distribution of the input data and embedding layer of the best-performing neural network, optimised over perplexity.}\label{fig:best_tsne}
 \end{figure}
-
+\clearpage
 \section{Summary}
 An inference pipeline for a neural network to recognise and add together MNIST digit pairs has been built with \texttt{Tensorflow}, hyperparameter tuned with \texttt{Optuna}, and trained to an accuracy of 95\%. Additionally, other inference algorithms have been explored, including SVMs, random forest classifiers, and AdaBoost classifiers, with respective accuracies of 80\%, 79\%, and 14\%. 
 
