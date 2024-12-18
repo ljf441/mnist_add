@@ -1,16 +1,16 @@
 # Fdb version 4
-["bibtex report"] 1734531944.00057 "report.aux" "report.bbl" "report" 1734531945.72455 0
+["bibtex report"] 1734531944.00057 "report.aux" "report.bbl" "report" 1734539384.56043 0
   "./bibliography.bib" 1734531869.05632 3703 affbb9372d5f878526ef9baf96c489ad ""
   "./vancouver.bst" 1734254035.07052 40624 ac6ae80a2b874e3abad2798e8fbde6a2 ""
-  "report.aux" 1734531945.49469 10886 4959c91ab8d6173f1f7b060558f04322 "pdflatex"
+  "report.aux" 1734539384.26414 10886 4959c91ab8d6173f1f7b060558f04322 "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["pdflatex"] 1734531944.07468 "/home/ljf1/dis/mnist_add/report/report.tex" "report.pdf" "report" 1734531945.72466 0
+["pdflatex"] 1734539382.48853 "/home/ljf1/dis/mnist_add/report/report.tex" "report.pdf" "report" 1734539384.56063 0
   "../Y_dist_few.png" 1734522194.32773 16130 c8521fa45f7b23e237284d64bbaba30e ""
   "../Y_dist_many.png" 1734530755.64128 29832 2cdbda27e4f1a97ee54e9c593ac0a3ea ""
-  "../best_tsne.png" 1734530989.29815 230786 2d3db1f27bda2824c1e9e4147fe1d3cb ""
+  "../best_tsne.png" 1734532028.52731 276519 d14c69498cc7eba691917ad650999f82 ""
   "../classifer_barplot.png" 1734522531.33819 45955 d377790a2ede3899159c411ac1c49e49 ""
   "../classifier_compare.png" 1734522367.18584 34245 8fd3c45a3d9d7245182ab8b6d7c3a0f9 ""
   "../classifier_heatmap.png" 1734522370.94817 56276 403cf98d86879b20e99ccc6ca16cc788 ""
@@ -21,7 +21,7 @@
   "../nn_predictions.png" 1734521123.9537 131761 d3c2acd9d105f2ca8b777ddb260e850b ""
   "../tsne.png" 1734527939.69428 678106 bf7b4f69821abece17853cd38f056422 ""
   "/etc/texmf/web2c/texmf.cnf" 1731690417.5266 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/ljf1/dis/mnist_add/report/report.tex" 1734531942.17369 33137 81d2af1a8cdc420d7cca62a6010d8e25 ""
+  "/home/ljf1/dis/mnist_add/report/report.tex" 1734539382.05014 33137 81d2af1a8cdc420d7cca62a6010d8e25 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -131,10 +131,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1731691458.92402 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1731691522 8211879 88d17212ad64e32db9219dc1a27eb947 ""
-  "report.aux" 1734531945.49469 10886 4959c91ab8d6173f1f7b060558f04322 "pdflatex"
-  "report.bbl" 1734531944.05469 1859 f31f6e52fef45b9ccedb56118063513b "bibtex report"
-  "report.out" 1734531945.49469 1953 945aabca950c5a6a7874ea12659fb61e "pdflatex"
-  "report.tex" 1734531942.17369 33137 81d2af1a8cdc420d7cca62a6010d8e25 ""
+  "report.aux" 1734539384.26414 10886 4959c91ab8d6173f1f7b060558f04322 "pdflatex"
+  "report.bbl" 1734532052.06685 1873 1d6c6ff668f80df17a486fa68cf592fc "bibtex report"
+  "report.out" 1734539384.26414 1953 945aabca950c5a6a7874ea12659fb61e "pdflatex"
+  "report.tex" 1734539382.05014 33137 81d2af1a8cdc420d7cca62a6010d8e25 ""
   (generated)
   "report.aux"
   "report.log"
