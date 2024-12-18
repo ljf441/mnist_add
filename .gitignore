@@ -16,3 +16,4 @@ saved_prev/*
 logs/*
 wget-log
 *.keras
+*.log
