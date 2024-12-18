@@ -66,6 +66,9 @@ The Docker image contains:
     - AdaBoost:
         - `best_adaboost_model.pkl`, which contains the best Optuna hyperparameter tuning results. This can be used to build the architecture for the best-performing AdaBoost model.
 
+# where to find the report
+The report is located in the `report` folder and is named `report.pdf`.
+
 # use of auto-generation tools
 
 Auto-generation tools were used as follows:
