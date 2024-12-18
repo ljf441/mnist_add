@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex report"] 1734531944.00057 "report.aux" "report.bbl" "report" 1734546371.65287 0
+["bibtex report"] 1734531944.00057 "report.aux" "report.bbl" "report" 1734550233.46466 0
   "./bibliography.bib" 1734541109.57201 3703 affbb9372d5f878526ef9baf96c489ad ""
   "./vancouver.bst" 1734541109.58101 40624 ac6ae80a2b874e3abad2798e8fbde6a2 ""
-  "report.aux" 1734546371.27664 10886 4959c91ab8d6173f1f7b060558f04322 "pdflatex"
+  "report.aux" 1734550233.22795 10886 4959c91ab8d6173f1f7b060558f04322 "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["pdflatex"] 1734546369.55447 "/home/ljf1/dis/mnist_add/report/report.tex" "report.pdf" "report" 1734546371.65304 0
+["pdflatex"] 1734550231.66853 "/home/ljf1/dis/mnist_add/report/report.tex" "report.pdf" "report" 1734550233.4648 0
   "../Y_dist_few.png" 1734541109.48201 16130 c8521fa45f7b23e237284d64bbaba30e ""
   "../Y_dist_many.png" 1734541109.48201 29832 2cdbda27e4f1a97ee54e9c593ac0a3ea ""
   "../best_tsne.png" 1734541109.49101 276519 d14c69498cc7eba691917ad650999f82 ""
@@ -21,7 +21,7 @@
   "../nn_predictions.png" 1734541109.56301 131761 d3c2acd9d105f2ca8b777ddb260e850b ""
   "../tsne.png" 1734541109.77901 678106 bf7b4f69821abece17853cd38f056422 ""
   "/etc/texmf/web2c/texmf.cnf" 1731690417.5266 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/ljf1/dis/mnist_add/report/report.tex" 1734546369.22464 33128 f0da12c8295ad146261f562dc3cad41b ""
+  "/home/ljf1/dis/mnist_add/report/report.tex" 1734550231.42795 33175 f9c23ec49329a855df732f910203cd01 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
@@ -131,10 +131,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1731691458.92402 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1731691522 8211879 88d17212ad64e32db9219dc1a27eb947 ""
-  "report.aux" 1734546371.27664 10886 4959c91ab8d6173f1f7b060558f04322 "pdflatex"
+  "report.aux" 1734550233.22795 10886 4959c91ab8d6173f1f7b060558f04322 "pdflatex"
   "report.bbl" 1734541109.57201 1873 1d6c6ff668f80df17a486fa68cf592fc "bibtex report"
-  "report.out" 1734546371.27664 1953 945aabca950c5a6a7874ea12659fb61e "pdflatex"
-  "report.tex" 1734546369.22464 33128 f0da12c8295ad146261f562dc3cad41b ""
+  "report.out" 1734550233.22795 1953 945aabca950c5a6a7874ea12659fb61e "pdflatex"
+  "report.tex" 1734550231.42795 33175 f9c23ec49329a855df732f910203cd01 ""
   (generated)
   "report.aux"
   "report.log"
