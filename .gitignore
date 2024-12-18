@@ -12,6 +12,8 @@ svm_model.pkl
 *.tgz
 *.pkl
 cuda/*
-save/*
+saved_prev/*
 logs/*
 wget-log
+*.keras
+*.log
