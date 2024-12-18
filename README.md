@@ -65,3 +65,13 @@ The Docker image contains:
         - `best_forest_model.pkl`, which contains the best Optuna hyperparameter tuning results. This can be used to build the architecture for the best-performing Random Forest model.
     - AdaBoost:
         - `best_adaboost_model.pkl`, which contains the best Optuna hyperparameter tuning results. This can be used to build the architecture for the best-performing AdaBoost model.
+
+# use of auto-generation tools
+
+Auto-generation tools were used as follows:
+- To help setup `Tensorflow` on a WSL2 environment to be able to use the GPU.
+- Parsing error messages throughout the project.
+- Assistance in formatting the report in $\LaTeX$, specifically with tables and referencing.
+- Code prototyping in plotting the results for task 4. 
+
+Auto-generation tools were not used for code generation elsewhere.

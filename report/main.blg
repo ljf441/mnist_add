@@ -7,44 +7,49 @@ Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: bibliography.bib
-You've used 1 entry,
+Warning--empty author and editor in Zeiler2013relu
+Warning--missing publisher in Zeiler2013relu
+Warning--empty author and editor in kingma2017adammethodstochasticoptimization
+Warning--missing publisher in kingma2017adammethodstochasticoptimization
+You've used 7 entries,
             3507 wiz_defined-function locations,
-            695 strings with 4887 characters,
-and the built_in function-call counts, 1329 in all, are:
-= -- 133
-> -- 13
-< -- 18
-+ -- 5
-- -- 2
-* -- 75
-:= -- 162
-add.period$ -- 4
-call.type$ -- 1
+            747 strings with 6698 characters,
+and the built_in function-call counts, 15263 in all, are:
+= -- 1755
+> -- 155
+< -- 65
++ -- 76
+- -- 33
+* -- 1233
+:= -- 1648
+add.period$ -- 25
+call.type$ -- 7
 change.case$ -- 0
-chr.to.int$ -- 40
-cite$ -- 1
-duplicate$ -- 158
-empty$ -- 123
-format.name$ -- 1
-if$ -- 310
+chr.to.int$ -- 150
+cite$ -- 11
+duplicate$ -- 1255
+empty$ -- 1487
+format.name$ -- 36
+if$ -- 3578
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 9
-newline$ -- 8
-num.names$ -- 1
-pop$ -- 32
+int.to.str$ -- 7
+missing$ -- 76
+newline$ -- 38
+num.names$ -- 7
+pop$ -- 196
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 20
+skip$ -- 169
 stack$ -- 0
-substring$ -- 151
-swap$ -- 27
-text.length$ -- 8
+substring$ -- 2883
+swap$ -- 184
+text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 0
-while$ -- 10
-width$ -- 2
-write$ -- 13
+warning$ -- 4
+while$ -- 73
+width$ -- 8
+write$ -- 78
+(There were 4 warnings)
