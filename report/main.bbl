@@ -2,7 +2,37 @@
 
 \bibitem{deng2012mnist}
 Deng L.
-\newblock The mnist database of handwritten digit images for machine learning research.
+\newblock The MNIST Database of Handwritten Digit Images for Machine Learning Research.
 \newblock IEEE Signal Processing Magazine. 2012;29(6):141-2.
+
+\bibitem{Zeiler2013relu}
+Zeiler MD, Ranzato M, Monga R, Mao MZ, Yang K, Le QV, et~al.. On Rectified Linear Units for Speech Processing; 2013.
+\newblock Available from: \url{https://doi.org/10.1109/ICASSP.2013.6638312}.
+
+\bibitem{kingma2017adammethodstochasticoptimization}
+Kingma DP, Ba J. Adam: A Method for Stochastic Optimization; 2017.
+\newblock Available from: \url{https://arxiv.org/abs/1412.6980}.
+
+\bibitem{Mehta_2019}
+Mehta P, Bukov M, Wang CH, Day AGR, Richardson C, Fisher CK, et~al.
+\newblock A high-bias, low-variance introduction to Machine Learning for physicists.
+\newblock Physics Reports. 2019 May;810:1–124.
+\newblock Available from: \url{http://dx.doi.org/10.1016/j.physrep.2019.03.001}.
+
+\bibitem{Zheng2021}
+Zheng X, Jia J, Guo S, Jin-song C, Sun L, Xiong Y, et~al.
+\newblock Full Parameter Time Complexity (FPTC): A Method to Evaluate the Running Time of Machine Learning Classifiers for Land Use/Land Cover Classification.
+\newblock IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing. 2021 01;PP:1-1.
+
+\bibitem{Breiman2017-zt}
+Breiman L, Friedman JH, Olshen RA, Stone CJ.
+\newblock Classification And Regression Trees.
+\newblock Routledge; 2017.
+
+\bibitem{JMLR:v9:vandermaaten08a}
+van~der Maaten L, Hinton G.
+\newblock Visualizing Data using t-SNE.
+\newblock Journal of Machine Learning Research. 2008;9(86):2579-605.
+\newblock Available from: \url{http://jmlr.org/papers/v9/vandermaaten08a.html}.
 
 \end{thebibliography}

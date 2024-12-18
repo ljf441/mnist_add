@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.15)  16 DEC 2024 23:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.11.15)  18 DEC 2024 10:21
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -694,7 +694,7 @@ Package microtype Info: Loading configuration file microtype.cfg.
  (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2023/03/13 v3.1a microtype main configuration file (RS)
 ))
-LaTeX Font Info:    Trying to load font information for T1+ptm on input line 38.
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 39.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -704,24 +704,24 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 \big@size=\dimen158
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -742,7 +742,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 38.
+Package hyperref Info: Link coloring OFF on input line 39.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -782,26 +782,26 @@ Package hyperref Info: Link coloring OFF on input line 38.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 38.
-Package microtype Info: Applying patch `item' on input line 38.
-Package microtype Info: Applying patch `toc' on input line 38.
-Package microtype Info: Applying patch `eqnum' on input line 38.
-Package microtype Info: Applying patch `footnote' on input line 38.
-Package microtype Info: Applying patch `verbatim' on input line 38.
+LaTeX Info: Redefining \microtypecontext on input line 39.
+Package microtype Info: Applying patch `item' on input line 39.
+Package microtype Info: Applying patch `toc' on input line 39.
+Package microtype Info: Applying patch `eqnum' on input line 39.
+Package microtype Info: Applying patch `footnote' on input line 39.
+Package microtype Info: Applying patch `verbatim' on input line 39.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 38.
+LaTeX Info: Redefining \showhyphens on input line 39.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 48.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 61.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -809,29 +809,139 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- (./main.bbl) [1
+<../Y_dist_many.png, id=63, 722.7pt x 433.62pt>
+File: ../Y_dist_many.png Graphic file (type png)
+<use ../Y_dist_many.png>
+Package pdftex.def Info: ../Y_dist_many.png  used on input line 75.
+(pdftex.def)             Requested size: 398.4237pt x 239.05414pt.
+<../Y_dist_few.png, id=65, 722.7pt x 433.62pt>
+File: ../Y_dist_few.png Graphic file (type png)
+<use ../Y_dist_few.png>
+Package pdftex.def Info: ../Y_dist_few.png  used on input line 81.
+(pdftex.def)             Requested size: 398.4237pt x 239.05414pt.
+ [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./main.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}] [2 <../Y_dist_many.png> <../Y_dist_few.png>]
+LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 93.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `ztmcm' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 93.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 93.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 93.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 93.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 93.
+ [3] [4] [5]
+<../confusion_nn.png, id=137, 1084.05pt x 578.16pt>
+File: ../confusion_nn.png Graphic file (type png)
+<use ../confusion_nn.png>
+Package pdftex.def Info: ../confusion_nn.png  used on input line 229.
+(pdftex.def)             Requested size: 398.4237pt x 212.4955pt.
+<../nn_predictions.png, id=139, 722.7pt x 361.35pt>
+File: ../nn_predictions.png Graphic file (type png)
+<use ../nn_predictions.png>
+Package pdftex.def Info: ../nn_predictions.png  used on input line 237.
+(pdftex.def)             Requested size: 398.4237pt x 199.21178pt.
+ [6] [7 <../confusion_nn.png> <../nn_predictions.png>]
+<../confusion_SVM.png, id=158, 1084.05pt x 578.16pt>
+File: ../confusion_SVM.png Graphic file (type png)
+<use ../confusion_SVM.png>
+Package pdftex.def Info: ../confusion_SVM.png  used on input line 306.
+(pdftex.def)             Requested size: 398.4237pt x 212.4955pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8
+
+] [9 <../confusion_SVM.png>]
+<../confusion_Random Forest Classifier.png, id=179, 1084.05pt x 578.16pt>
+File: ../confusion_Random Forest Classifier.png Graphic file (type png)
+<use ../confusion_Random Forest Classifier.png>
+Package pdftex.def Info: ../confusion_Random Forest Classifier.png  used on input line 375.
+(pdftex.def)             Requested size: 398.4237pt x 212.4955pt.
+ [10
+
+] [11 <../confusion_Random Forest Classifier.png>]
+<../confusion_AdaBoost Classifier.png, id=198, 1084.05pt x 578.16pt>
+File: ../confusion_AdaBoost Classifier.png Graphic file (type png)
+<use ../confusion_AdaBoost Classifier.png>
+Package pdftex.def Info: ../confusion_AdaBoost Classifier.png  used on input line 433.
+(pdftex.def)             Requested size: 398.4237pt x 212.4955pt.
+ [12
+
+ <../confusion_AdaBoost Classifier.png>] [13]
+<../classifier_heatmap.png, id=217, 1734.48pt x 289.08pt>
+File: ../classifier_heatmap.png Graphic file (type png)
+<use ../classifier_heatmap.png>
+Package pdftex.def Info: ../classifier_heatmap.png  used on input line 448.
+(pdftex.def)             Requested size: 398.4237pt x 66.40318pt.
+<../classifier_compare.png, id=218, 867.24pt x 578.16pt>
+File: ../classifier_compare.png Graphic file (type png)
+<use ../classifier_compare.png>
+Package pdftex.def Info: ../classifier_compare.png  used on input line 454.
+(pdftex.def)             Requested size: 398.4237pt x 265.62158pt.
+ [14 <../classifier_heatmap.png> <../classifier_compare.png>] [15]
+<../tsne.png, id=233, 867.24pt x 1445.4pt>
+File: ../tsne.png Graphic file (type png)
+<use ../tsne.png>
+Package pdftex.def Info: ../tsne.png  used on input line 480.
+(pdftex.def)             Requested size: 398.4237pt x 664.05399pt.
+
+
+LaTeX Warning: Float too large for page by 51.78577pt on input line 482.
+
+<../best_tsne.png, id=234, 1084.05pt x 578.16pt>
+File: ../best_tsne.png Graphic file (type png)
+<use ../best_tsne.png>
+Package pdftex.def Info: ../best_tsne.png  used on input line 486.
+(pdftex.def)             Requested size: 398.4237pt x 212.4955pt.
+[16
+
+] [17 <../tsne.png>] [18 <../best_tsne.png>] (./main.bbl) [19
+
+] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 6A201D21A60CB446EA1152FE4DFF6646;991.
+(rerunfilecheck)             Checksum: 945AABCA950C5A6A7874EA12659FB61E;1953.
  ) 
 Here is how much of TeX's memory you used:
- 11484 strings out of 474222
- 180540 string characters out of 5748732
- 1930975 words of memory out of 5000000
- 33559 multiletter control sequences out of 15000+600000
- 568239 words of font info for 69 fonts, out of 8000000 for 9000
+ 11987 strings out of 474222
+ 188841 string characters out of 5748732
+ 1939975 words of memory out of 5000000
+ 33811 multiletter control sequences out of 15000+600000
+ 601753 words of font info for 194 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,1033b,443s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on main.pdf (1 page, 53800 bytes).
+ 75i,10n,79p,1033b,562s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (19 pages, 1671140 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 10801 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 335 PDF objects out of 1000 (max. 8388607)
+ 267 compressed objects within 3 object streams
+ 82 named destinations out of 1000 (max. 500000)
+ 45224 words of extra memory for PDF output out of 51595 (max. 10000000)
 
