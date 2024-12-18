@@ -77,4 +77,8 @@ Auto-generation tools were used as follows:
 - Assistance in formatting the report in $\LaTeX$, specifically with tables and referencing.
 - Code prototyping in plotting the results for task 4. 
 
+<<<<<<< HEAD
 Auto-generation tools were not used elsewhere, for code generation, writing, or otherwise.
+=======
+Auto-generation tools were not used elsewhere, code generation or writing or otherwise.
+>>>>>>> 99b5f06f57eec5e076627fbdb0910470420731bb
